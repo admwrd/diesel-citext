@@ -1,7 +1,7 @@
 [package]
 name = "diesel-citext"
 version = "0.3.0"
-authors = ["Greg Elenbaas <me@gregelenbaas.com>"]
+authors = ["Greg Elenbaas <me@gregelenbaas.com>", "AdmWrd"]
 edition = "2018"
 readme = "README.md"
 license = "MIT"
@@ -17,6 +17,6 @@ with-actix-web = ["actix-web"]
 
 [dependencies]
 actix-web = { version = "0.7", optional = true }
-diesel = { version = "1.3", features = ["postgres"] }
+diesel = { version = "1.4", features = ["postgres", "url", "extras", "chrono"] }
 serde = { version = "1.0", features = ["derive"]}
 
